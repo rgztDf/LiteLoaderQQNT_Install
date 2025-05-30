@@ -233,9 +233,8 @@ def can_connect(url, timeout=2):
 def install_liteloader(file_path):
     try:
         temp_dir = tempfile.gettempdir()
-        download_and_extract_form_release("LiteLoaderQQNT/LiteLoaderQQNT")
-#       download_and_extract_from_git("LiteLoaderQQNT/LiteLoaderQQNT")
-        print("下载完成，开始安装 LiteLoaderQQNT")
+        download_and_extract_form_release("LateDreamXD/LLQQNT-unofficial")
+        print("下载完成，开始安装 LLQQNT-unofficial")
 
         source_dir = os.path.join(file_path, "resources", "app", "LiteLoaderQQNT")
         destination_dir = os.path.join(file_path, "resources", "app", "LiteLoaderQQNT_bak")
@@ -644,7 +643,7 @@ def download_and_extract_form_release(repos: str):
 
     cached_names = {
         "ltxhhz/LL-plugin-list-viewer": "list-viewer.zip",
-        "LiteLoaderQQNT/LiteLoaderQQNT": "LiteLoaderQQNT.zip"
+        "LateDreamXD/LLQQNT-unofficial": "LLQQNT-unofficial.zip"
     }
 
     if repos not in cached_names:
